@@ -1,0 +1,108 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User Authentication",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 100050900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has a valid api token",
+            "match": {
+              "location": "com.company.project.automation.stepdefinitions.BrowShot.\u003cinit\u003e(BrowShot.java:15)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-21T15:54:41.590Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8852077900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.company.project.automation.stepdefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Fetch basic user details",
+        "description": "",
+        "id": "browshot-api-tests;fetch-basic-user-details",
+        "after": [
+          {
+            "result": {
+              "duration": 1244359400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.company.project.automation.stepdefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4069959900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user access their account info",
+            "match": {
+              "location": "com.company.project.automation.stepdefinitions.BrowShot.\u003cinit\u003e(BrowShot.java:18)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user info should be validated",
+            "match": {
+              "location": "com.company.project.automation.stepdefinitions.BrowShot.\u003cinit\u003e(BrowShot.java:21)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BrowShot"
+          },
+          {
+            "name": "@BasicSanity"
+          }
+        ]
+      }
+    ],
+    "name": "Browshot API tests",
+    "description": "",
+    "id": "browshot-api-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BrowShot.feature",
+    "tags": [
+      {
+        "name": "@BrowShot",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
