@@ -20,6 +20,27 @@ project.ext {
 test{
     systemProperties(System.getProperties())
 }
+//Added for calculating codecoverage
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.destination file("test-output/jacoco")
+    }
+}
+
+//Code coverage gating
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.7
+            }
+        }
+    }
+}
+
+check.dependsOn jacocoTestReport
 
 
 dependencies {
