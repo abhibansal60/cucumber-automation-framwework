@@ -1,3 +1,4 @@
+@UI
 Feature: Sanity tasks for the app
   Background: Common steps before every scenario in the feature
     Given user has access to the application

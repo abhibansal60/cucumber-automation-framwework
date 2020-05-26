@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources",
         glue = "com.company.project.automation.stepdefinitions",
-        tags = "@BrowShot",
+        tags = "@UI",
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "json:test-output/json/cucumber-report.json",
                 "pretty"},
