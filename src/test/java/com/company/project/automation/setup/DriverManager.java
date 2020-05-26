@@ -30,6 +30,7 @@ public class DriverManager {
                     options.setExperimentalOption("useAutomationExtension",false);
                     if (bw.isHeadless()) options.addArguments("--headless");
                     if(bw.getOs().equals("linux")){
+                        System.out.println("Running on a Linux machine...");
                         options.addArguments("--silent");
                         options.addArguments("ignore-certificate-errors");
                         options.addArguments("-allow-running-insecure-content");
