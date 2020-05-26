@@ -34,8 +34,9 @@ public class DriverManager {
                         options.addArguments("ignore-certificate-errors");
                         options.addArguments("-allow-running-insecure-content");
                         options.addArguments("-window-size=1920,1080");
+                        options.addArguments("--headless");
                         chromeDriver=bw.getChromeLinux();
-                        options.setBinary(bw.getChromeLinuxBinary());
+                        //options.setBinary(bw.getChromeLinuxBinary());
                     }
                     System.setProperty("webdriver.chrome.driver",chromeDriver);
                     capabilities.setCapability(ChromeOptions.CAPABILITY,options);

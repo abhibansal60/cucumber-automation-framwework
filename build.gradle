@@ -8,6 +8,7 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 apply plugin: 'java'
+apply plugin: 'jacoco'
 
 repositories {
     mavenCentral()
@@ -41,7 +42,6 @@ jacocoTestCoverageVerification {
 }
 
 check.dependsOn jacocoTestReport
-
 
 dependencies {
     testImplementation 'io.cucumber:cucumber-java8:' + cucumberVersion
